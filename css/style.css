@@ -1,0 +1,332 @@
+body{
+	background-image: url(../img/backgroundContent.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+.logo{
+	width: 200px;
+	height: 200px;
+}
+.blockLogo{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+.blockHeading{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 9%;
+}
+.blockHeading .heading{
+	font-family: Arial;
+	font-size: 45pt;
+	color: #a5906a;
+	text-shadow: 2px 1px 3px black;
+	margin: 0;
+}
+
+.blockParagraph{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.blockParagraph .paragraph{
+	color: white;
+	text-shadow: 2px 1px 3px black;
+	font-size: 18pt;
+}
+.blockTheForm{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+.blockTheForm form{
+	width: 600px;
+}
+.blockTheForm form input{
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 55px;
+	font-size: 30pt;
+	border: 3px solid white;
+	outline:none;
+	padding: 1% 0% 2% 2%;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	border-radius: 10px;
+}
+
+.blockTheForm form input:hover{
+	box-shadow: 1px 1px 10px #41adcc;
+}
+
+.blockTheForm form button{
+	width: 100%;
+	margin: 1%;
+	height: 60px;
+	font-size: 25pt;
+	font-family: Arial;
+	border: none;
+	border-radius: 10px;
+	background-color: #d8cf3a;
+	color:  #dadada;
+	text-shadow: 1px 1px 4px black;
+}
+
+.blockTheForm form button:hover{
+	background-color: #e5db36;
+	color: #e6e6e4;
+}
+
+.sec2{
+	width: 100%;
+	margin-top: 10%;
+	background-color: white;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.blockAccent{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.sec2 .blockAccent div img{
+	height: 54px;
+	width: 55px;
+	margin: 0;
+}
+
+.sec2 .blockAccent .circle{
+	border: 2px solid #c0c44d;
+	width: 114px;
+	height: 114px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1%;
+}
+.sec2 .blockAccent div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	margin-right: 5%; 
+}
+.sec2 .blockAccent div:last-child{
+	margin-right: 0;
+}
+
+.sec2 .blockAccent div h1, p{
+	margin-top: 2%;
+	font-family: Arial;
+	text-align: center;
+}
+.sec2 .blockAccent div h1{
+	font-size: 20pt;
+}
+.sec2 .blockAccent div p{
+	font-size: 15pt;
+	font-family: Courier, monospace;
+	text-align: center;
+}
+
+.sec3{
+	width: 100%;
+	background-color: #ecebe9;
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+.blockCards{
+	width: 100%;
+}
+.cardsHeading{
+	width: 100%;
+	text-align: center;
+	color: #2e2921;
+}
+
+.sec3 .blockCards .cards{
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+.sec3 .blockCards .cards div{
+	margin-right: 2%;
+	height: 295px;
+	width: 295px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;	
+}
+.sec3 .blockCards .cards>div{
+	width: 295px;
+	height: 295px;
+	background-repeat: no-repeat;
+}
+
+.sec3 .blockCards .cards h1{
+	text-align: center;
+	padding: 1px;
+	background-color: rgba(99,66,48,0.6);
+	width: 250px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	font-family: Arial;
+	font-size: 21pt;
+}
+
+.sec3 .blockCards .cards .card1{
+	background: url(../img/card1.jpg);
+	background-size: cover;
+}
+
+.sec3 .blockCards .cards .card2{
+	background: url(../img/card2.jpg);
+	background-size: cover;
+}
+
+.sec3 .blockCards .cards .card3{
+	background: url(../img/card3.jpeg);
+	background-size: cover;
+}
+
+
+
+
+/* СЛАЙДЕР */
+.slideshow-container{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+.prev, .next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+.next{
+	border-radius: 3px 0 0 3px;
+	right: 0;
+}
+
+.prev:hover, .next:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.dot{
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+	background-color: #717171;
+}
+
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}
+@keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}
+
+.sec4{
+	background-color: #fff;
+}
+
+.sec4 .blockSlider{
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+
+.sec5 .blockFooter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.blockParagraphFooter .paragraph{
+	color: white;
+	text-shadow: 2px 1px 3px black;
+	font-size: 18pt;
+}
+
+.blockTheFormFooter{
+	width: 600px;
+}
+.blockTheFormFooter form input{
+width: 600px;
+	background-color: rgba(0,0,0,0);
+	height: 40px;
+	font-size: 30pt;
+	border: 3px solid white;
+	outline:none;
+	padding: 1% 0% 2% 2%;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	border-radius: 10px;
+}
+
+.blockTheFormFooter form input:hover{
+	box-shadow: 1px 1px 10px #41adcc;
+}
+
+.blockTheFormFooter form button{
+	width: 600px;
+	margin: 1%;
+	height: 40px;
+	font-size: 25pt;
+	font-family: Arial;
+	border: none;
+	border-radius: 10px;
+	background-color: #d8cf3a;
+	color:  #dadada;
+	text-shadow: 1px 1px 4px black;
+}
+
+.blockTheFormFooter form button:hover{
+	background-color: #e5db36;
+	color: #e6e6e4;
+}
+
+.blockTheFormFooter .blockParagraphFooter{
+	float: left;
+}
+
+.sec5 .blockFooter{
+	margin-top: 6%;
+	margin-bottom: 6%;
+}
